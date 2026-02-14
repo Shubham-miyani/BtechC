@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans" , "Gill Sans MT", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header div a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.main-section{
+    background-image: url("https://plus.unsplash.com/premium_photo-1761696091312-5f580b6a5af1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D");
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    color: antiquewhite;
+    background: rgba(0,0,0,0.35);
+}
+
+.cards-section{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 1rem;
+}
+
+.left{
+    box-shadow: rgba(46, 208, 240, 0.4) 5px 5px, rgba(46, 201, 240, 0.3) 10px 10px, rgba(46, 201, 240, 0.2) 15px 15px, rgba(46, 185, 240, 0.1) 20px 20px, rgba(46, 211, 240, 0.05) 25px 25px;
+    margin: 1rem;
+    background-color: beige;
+    padding: 1rem;
+}
+
+.left ul li{
+    list-style: none;
+    padding: 1rem 2rem;
+}
+
+.right{
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.project-cards div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+    padding: 1rem 2rem ;
+    border-radius: 10px;
+}
+
+
+@media  screen and (max-width: 768px){
+    .header div a{
+        display: none;
+    }
+}
+
